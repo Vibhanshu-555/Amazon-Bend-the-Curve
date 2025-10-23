@@ -49,14 +49,14 @@ The Power BI dashboard consolidates data processed from previous Jupyter noteboo
 |------|--------------|
 | `Dashboard.pbix` | Main Power BI file containing all visuals and dashboards |
 | `Dashboard.pdf` | Static exported version of the dashboard for presentations |
-| `Data/` | Folder containing processed CSV files used as data sources |
+| [`data/summary_data/`](../data/summary_data/) | Folder containing processed CSV files used as data sources |
 
 ---
 
 ## 🚀 How to Use
 
 1. Open the `Dashboard.pbix` file in **Power BI Desktop/Service**.  
-2. Ensure the **data connections** point to the CSV files inside the `Data/` folder.  
+2. Ensure the **data connections** point to the CSV files inside the [`data/summary_data/`](../data/summary_data/) folder.  
 3. Use slicers and filters to explore different KPIs and categories.  
 4. Export visuals or full reports as needed for analysis or presentation.
 
