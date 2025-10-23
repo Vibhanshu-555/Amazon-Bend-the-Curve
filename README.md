@@ -1,52 +1,51 @@
-# Amazon Bend the Curve - Product Catalog Analysis
+# Amazon Bend the Curve – Product Catalog Analysis
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat&logo=numpy&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-F7931E?style=flat&logo=matplotlib&logoColor=white)
+![PowerBI](https://img.shields.io/badge/Power%20BI-F2C811?style=flat&logo=power-bi&logoColor=black)
+![Excel](https://img.shields.io/badge/Excel-217346?style=flat&logo=microsoft-excel&logoColor=white)
 
 ## Executive Summary
-This project analyzes Amazon's product catalog to evaluate catalog health, identify high-potential products, uncover dead listings, and provide actionable insights to improve sales performance and inventory management. The analysis combines data cleaning, health scoring, and visualization using Python and Power BI.
+This project analyzes **Amazon's product catalog** to evaluate listing performance and identify actionable insights. Using **Python for data exploration, cleaning, and metrics**, and **Power BI for interactive visualization**, I derived key insights into product health, sales, and category performance. 
+
+**Dashboard & Files:**  
+- [Power BI Dashboard (.pbix)](./dashboard/Amazon_Bend_The_Curve.pbix)  
+- [Dashboard PDF](./dashboard/Amazon_Bend_The_Curve.pdf)
+- [Live Dashboard](https://app.powerbi.com/groups/me/reports/9a455ef1-ec83-4d15-83e1-91c0b316cfe5?ctid=a56be167-9ffb-4100-a624-ae3e45045aa6&pbi_source=linkShare&bookmarkGuid=5b913904-16b1-42d2-bfa6-57a4059004c3)
 
 ## Business Problem
-Amazon's product catalog contains thousands of listings, some of which underperform or may have incomplete information. The goal is to:
-- Identify low-performing or dead listings.
-- Highlight high-potential products for focused marketing or inventory support.
-- Assess listing completeness and catalog health.
-- Provide actionable recommendations for category management and sales optimization.
+Amazon’s catalog contains thousands of products, but not all drive revenue effectively.  
+**Amazon: Bend the Curve** challenge – identify **underperforming listings, dead products, and high-potential opportunities** for catalog optimization.
 
 ## Methodology
-1. **Data Exploration**: 
-   - Inspected dataset structure, checked categorical and numerical columns, and visualized distributions using `matplotlib`.
-2. **Data Cleaning & Outlier Handling**:
-   - Filled missing numerical values with medians and categorical values with `'Unknown'`.
-   - Identified and capped outliers using the IQR method to reduce skew.
-3. **Catalog Health Metrics**:
-   - Calculated Sales Score, Rating Score, Return Rate Score (inverted), and Completeness Score.
-   - Combined metrics into a Health Score using:
-     ```
-     Health_Score = 0.4*Sales_Score + 0.3*Rating_Score + 0.15*(1-ReturnRate) + 0.15*Completeness
-     ```
-4. **Insights & Analysis**:
-   - Generated category-level summaries for sales, ratings, and health.
-   - Identified dead listings, overcrowded categories, and high-potential listings.
-   - Exported key metrics and analysis results as CSVs for dashboard integration.
-5. **Visualization & Dashboard**:
-   - Created a Power BI dashboard with bar charts, scatter plots, heatmaps, pie charts, and tables to visualize catalog health, sales, ratings, and inventory metrics.
+- **Data Exploration (EDA):** Inspect columns, distributions, nulls  
+- **Data Cleaning:** Fill missing values, correct types, cap outliers  
+- **Metrics Engineering:** Sales Score, Rating Score, Return Rate Score, Completeness Score → Health Score  
+- **Analysis:** Aggregate by category, identify dead listings, overcrowded categories, high-potential products  
 
-## Skills
-- Python: Data exploration, cleaning, and analysis using `pandas`, `numpy`, `matplotlib`.
-- Data Visualization: Power BI for interactive dashboards.
-- Data Handling: Outlier detection, missing value imputation, and data normalization.
-- Business Analysis: Identifying key performance indicators (KPIs), catalog health metrics, and actionable insights.
+## Skills & Tools
+- **Python:** `pandas`, `numpy`, `matplotlib` – EDA, cleaning, outlier handling, metrics calculation  
+- **Power BI:** Interactive dashboard, bar charts, scatter plots, heatmaps, pie charts  
+- **Business Analysis:** Catalog optimization, KPI-driven insights, sales strategy  
 
-## Results and Business Recommendations
-- **Dead Listings**: Products with low sales and poor ratings should be reviewed or removed.
-- **High-Potential Listings**: Identify listings with high ratings and moderate sales for focused promotion.
-- **Overcrowded Categories**: Categories like Laptops, Other Electronics, and Cameras are highly competitive; strategize pricing and promotions.
-- **Catalog Health**: Majority of products are healthy, but completeness and return rates can be improved for specific categories.
-- **Actionable Recommendations**:
-  - Improve product data completeness across listings.
-  - Promote high-potential listings to increase revenue.
-  - Regularly monitor dead and low-performing listings for removal or optimization.
+## Results & Business Recommendations
+**Insights from analysis:**  
+- **Dead Listings:** 152 products (low rating + no sales)  
+- **Overcrowded Categories:** Laptops, Other Electronics, Cameras, TV & Display  
+- **High-Potential Listings:** 8558 products (criteria: high rating + moderate sales + low competition)  
+- **Average Health Score:** 0.68 (42675 products)  
+- **Average Rating:** 4.4 / 5
+
+**Recommendations for Amazon:**  
+- Promote high-rating, moderate-sales products for ROI  
+- Improve listing **completeness** for discoverability  
+- Optimize or remove **dead listings** to save resources  
+- Focus marketing/pricing strategies on **overcrowded categories**  
 
 ## Next Steps
-- Integrate additional temporal sales data to track trends over time.
-- Add more KPIs for inventory turnover, discount impact, and return analysis.
-- Expand dashboard interactivity with filters for category, rating, and sales ranges.
-- Continuously monitor catalog health metrics to optimize listings and performance.
+- Track temporal **sales trends** and seasonal patterns  
+- Perform **A/B testing** on listings and promotions  
+- Explore **predictive modeling** for sales and return rates  
+- Continuous monitoring of **catalog health** for actionable insights  
