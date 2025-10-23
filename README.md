@@ -38,6 +38,8 @@ Amazon’s catalog contains thousands of products, but not all drive revenue eff
 - **Average Health Score:** 0.68 (42675 products)  
 - **Average Rating:** 4.4 / 5
 
+![**Dashboard Screenshot**](dashboard/Amazon_Bend_the_Curve_Dashboard.png)
+
 **Recommendations for Amazon:**  
 - Promote high-rating, moderate-sales products for ROI  
 - Improve listing **completeness** for discoverability  
