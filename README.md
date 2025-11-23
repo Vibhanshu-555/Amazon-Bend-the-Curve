@@ -13,7 +13,6 @@ This project analyzes **Amazon's product catalog** to evaluate listing performan
 **Dashboard & Files:**  
 - [Power BI Dashboard (.pbix)](./dashboard/Amazon_Bend_The_Curve.pbix)  
 - [Dashboard PDF](./dashboard/Amazon_Bend_The_Curve.pdf)
-- [Live Dashboard](https://app.powerbi.com/groups/me/reports/9a455ef1-ec83-4d15-83e1-91c0b316cfe5?ctid=a56be167-9ffb-4100-a624-ae3e45045aa6&pbi_source=linkShare&bookmarkGuid=5b913904-16b1-42d2-bfa6-57a4059004c3)
 
 ## Business Problem
 Amazon’s catalog contains thousands of products, but not all drive revenue effectively.  
